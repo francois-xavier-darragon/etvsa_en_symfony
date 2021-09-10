@@ -1,0 +1,104 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}HomeController!{% endblock %}
+
+{% block body %}
+
+      <section>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+          
+          <div class="carousel-inner"> 
+              <div class="carousel-item active" >
+                <img src="assets/images/carousel-electricity.jpg"
+                    class="d-block" alt="image-éctricité">
+                <div class="container">
+                  <div class="carousel-caption">
+                      <h1>Travaux d'électricité ?</h1>
+                      <p>Pour du dépannage et de l'installation.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="assets/images/carousel-utilitaire.jpg"
+                class="d-block" alt="image-utilitaire">
+                <div class="container">
+                  <div class="carousel-caption">
+                      <h1>Besoin d'un transporteur ?</h1>
+                      <p>Prise en charge et dépose de vos colis.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="assets/images/carousel-demenagement-etudiant.jpg"
+                class="d-block" alt="image-étudiant">
+                <div class="container">
+                  <div class="carousel-caption">
+                      <h1>Etudiants ? <br>Vous avez un besoin ?</h1>
+                      <p>Prise en charge et dépose de vos effets personnel.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+      </section>
+
+      <main>
+        <section class="heading">
+            <div class="row text">
+                <div class="col-md-7">
+                <h2 class="text-heading"> Qui sommes nous ?</h2>
+                <p class="lead-home">E & T Varennes sur Allier est une entreprise de services locaux d'électricité, mais aussi de transport. Nous assurons des travaux d'électricité pour les particuliers mais aussi pour des entreprises.</p>
+                <p class="lead-home">Besoin d'acheminer vos colis pour des magasins de proximité ? Le service de transport est là pour vous ! De plus, nous assurons aussi un service particulier pour les étudiants qui souhaitent quitter leurs logements, ou encore pour emménager. </p>
+                <p class="lead-home">Pour toutes demande n'ésitez pas à nous contacter. </p>
+              </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container marketing">
+                <div class="row">
+
+                  <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="assets/images/icone-éléctricité.png" alt="icon-électicité">
+                    <h2>Électricité</h2>
+                    <p>Vous êtes intéressé par ce service ?</p>
+                    <p><a class="btn btn-secondary" href="<?= $router->generate('main-electricity') ?>">Cliquez ici ! &raquo;</a></p>
+                  </div><!-- /.col-lg-4 -->
+
+                  <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="assets/images/icone-camion.png" alt="icon-camion">
+                    <h2>Transport de marchandises</h2>
+                    <p>Vous êtes intéressé par ce service ?</p>
+                    <p><a class="btn btn-secondary" href="<?= $router->generate('main-transport') ?>">Cliquez ici ! &raquo;</a></p>
+                  </div><!-- /.col-lg-4 -->
+
+                  <div class="col-lg-4">
+                    <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="assets/images/icone-étudiant.png" alt="icon-étudiant">
+                    <h2>Déménagement étudiants</h2>
+                    <p>Vous êtes intéressé par ce service ?</p>
+                    <p><a class="btn btn-secondary" href="<?= $router->generate('main-student') ?>">Cliquez ici ! &raquo;</a></p>
+                  </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+            </div>   
+        </section>
+      </main>
+      
+   
+
+{% endblock %}

@@ -1,0 +1,50 @@
+<!-- Navbar -->
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="{{ path('home') }}">
+              <img class="logo-entreprise" src="assets/images/Logo-entreprise-Philippe.jpg" alt="Logo E &lt; T">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                Menu <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+              <ul class="navbar-nav ">
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ path('home') }}">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ path('electricity') }}">Électricité générale et industrielle</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="{{ path('transport') }}">Transport de marchandises</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link " href="{{ path('student') }}">Déménagement étudiants</a>
+                  </li>
+              </ul>
+                  <div class="contact-nav">
+                    <ul class="contact-nav">
+                          <li class="nav-item">
+                            <a class="nav-link b-r" href="mailto:et.varennes@gmail.com">
+                                <div>
+                                  <img class="icon-mail" src="assets/images/icon-mail.svg" alt="icon-mail">
+                                  <small>Email</small>
+                                  <h6>et.varennes@gmail.com</h6>
+                                </div>
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link b-r" href="tel:0757086551">
+                                <div>
+                                  <img class="icon-tel" src="assets/images/icone-tel.ico" alt="icon-phone">
+                                  <small>Téléphone</small>
+                                  <h6>07 57 08 65 51</h6>
+                                </div>
+                            </a>
+                          </li>
+                      </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
