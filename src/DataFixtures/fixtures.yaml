@@ -1,0 +1,16 @@
+App\Entity\Services:
+    services_1:
+        name: 'transport'
+    services_2:
+        name: 'student'
+
+App\Entity\Packages:
+    packages_{1..5}:
+        delivery: '<sentence("delivery")>'
+        price: '<randomNumber("prices")>'
+        services: '@services_1'
+
+    packages_{6..13}:
+        towns: '<sentence("towns")>'
+        price: '<randomNumber("prices")>'
+        services: '@services_2'
